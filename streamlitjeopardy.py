@@ -22,8 +22,8 @@ try:
 
     if st.button("Show Correct Question & New Answer"):
         get_data().append(random.randint(0,len(j)))
-    st.markdown("**Answer:**")
     st.title(j.iloc[r[len(r)-1]]["category"] + " | $" + str(j.iloc[r[len(r)-1]]["value"]))
+    st.markdown("**Answer:**")
     st.header(j.iloc[r[len(r)-1]]["answer"])
     st.markdown("*Air Date: " + j.iloc[r[len(r)-1]]["air_date"] + "*")
     st.header(" ")
